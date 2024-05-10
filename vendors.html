@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="">
+<title>SHIELD VEDORS</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- HEADER =============================-->
+<header class="item header margin-top-0">
+<div class="wrapper">
+	<nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
+			<i class="fa fa-bars"></i>
+			<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a href="index.html" class="navbar-brand brand">VENDORS </a>
+		</div>
+		<div id="navbar-collapse-02" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="propClone"><a href="index.html">Home</a></li>
+				<li class="propClone"><a href="about.html">About</a></li>
+				<li class="propClone"><a href="vendors.html">ALL VENDORS</a></li>
+				<li class="propClone"><a href="contact.html">Contact</a></li>
+				<li class="propClone"><a href="log.html">Login</a></li>
+				<li class="propClone"><a href="sig.html">Sign-up</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="text-pageheader">
+					<div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.1s">
+						 VENDORS SERVICES<br> CHOOSE YOUR DESIRED VENDOR
+					</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+   
+<div class="container">
+  <div class="search-box">
+    <input type="text" placeholder="Search vendors...">
+    <button>Search</button>
+  </div>
+
+
+
+  
+<style>
+	.container {
+	  max-width: 1000px;
+	  margin: 0 auto;
+	}
+	
+	.search-box {
+	  display: flex;
+	  margin-bottom: 20px;
+	}
+	
+	.search-box input {
+	  padding: 10px;
+	  flex-grow: 1;
+	  border: none;
+	  border-radius: 5px 0 0 5px;
+	}
+	
+	.search-box button {
+	  padding: 10px;
+	  border: none;
+	  border-radius: 0 5px 5px 0;
+	  background-color: #333;
+	  color: #fff;
+	}
+	</style>
+
+
+<script>
+	const searchInput = document.querySelector('.search-box input');
+	const searchButton = document.querySelector('.search-box button');
+	const vendors = document.querySelectorAll('.vendor');
+	
+	searchButton.addEventListener('click', searchVendors);
+	searchInput.addEventListener('keyup', searchVendors);
+	
+	function searchVendors() {
+	  const searchTerm = searchInput.value.toLowerCase();
+	  
+	  vendors.forEach(vendor => {
+		const vendorName = vendor.querySelector('h1').textContent.toUpperCase();
+		const vendorCategory = vendor.querySelector('p:nth-of-type(1)').textContent.toLowerCase();
+		const vendorLocation = vendor.querySelector('p:nth-of-type(2)').textContent.toLowerCase();
+		
+		if (vendorName.includes(searchTerm) || vendorCategory.includes(searchTerm) || vendorLocation.includes(searchTerm)) {
+		  vendor.style.display = 'block';
+		} else {
+		  vendor.style.display = 'none';
+		}
+	  });
+	}
+	</script>
+	
+</header>
+
+<!-- CONTENT =============================-->
+<div class="vendor">
+<section class="item content">
+	<div class="container">
+		<div class="underlined-title">
+			<div class="editContent">
+				<h1 class="text-center latestitems">AVAILALABLE Vendors</h1>
+			</div>
+			<div class="wow-hr type_short">
+				<span class="wow-hr-h">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Your Best plug</h3>
+							<p>
+								 Enjoy fast and accurate Fashion Designing.
+							</p>
+							<p>
+								<a href="fashion.html" class="learn-more detailslearn"><i class="fa fa-link"></i> View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/FASHION DESIGNER.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="fashion.html">
+						<h1>Fashion Designers </h1>
+						</a>
+						<span class="price">
+							<a href="fashion.html" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.productbox -->
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Best carpentary Services</h3>
+							<p>
+								Hire us, we are the best.
+							</p>
+							<p>
+								<a href="carpenter.html" class="learn-more detailslearn"><i class="fa fa-link"></i> View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/CARPENTER.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>CARPENTERS</h1>
+						</a>
+						<span class="price">
+							<a href="carpenter.html" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.productbox -->
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Paints of Joy</h3>
+							<p>
+								 The coming together of Art and science.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/PAINTER.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>PAINTERS</h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section class="item content">
+	<div class="container">
+		<div class="underlined-title">
+			<div class="editContent">
+			</div>
+			<div class="wow-hr type_short">
+				<span class="wow-hr-h">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Shock your shockers</h3>
+							<p>
+								 The best Electronic Services.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i> View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/ELECTRONIC.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>ELECTRICIANS </h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.productbox -->
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Cool your homes</h3>
+							<p>
+								 Want AC installers, hire us.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/AC.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>AC INSTALLERS</h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.productbox -->
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Best plumbing services</h3>
+							<p>
+								 Lets do the plumbing for you.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/PLUMBER.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>PLUMBER</h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section class="item content">
+	<div class="container">
+		<div class="underlined-title">
+			<div class="editContent">
+			</div>
+			<div class="wow-hr type_short">
+				<span class="wow-hr-h">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Everything Videography</h3>
+							<p>
+								 We do video coverages etc hire us.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/CAMERA.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>CAMERA/MEDIA SPECIALISTS </h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.productbox -->
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Mummys kitchen</h3>
+							<p>
+								 Lets cook for you.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/COOK.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>COOKS</h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.productbox -->
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Best shoe plugs</h3>
+							<p>
+								 Wear your shoes with pride.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/SHOE1.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>COBLERS/SHOE MAKERS</h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section class="item content">
+	<div class="container">
+		<div class="underlined-title">
+			<div class="editContent">
+			</div>
+			<div class="wow-hr type_short">
+				<span class="wow-hr-h">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Lights up</h3>
+							<p>
+								Install sollar today with us.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/SOLAR.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>SOLAR-PANEL INSTALLERS </h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.productbox -->
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>The Best cleaning Services Ever</h3>
+							<p>
+								These are the categories of the best cleaning Services.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/CLEANER.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>CLEANERS</h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<!-- /.productbox -->
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Lets weld for you</h3>
+							<p>
+								 We can even weld your heart lol.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/WELDER.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>WELDERS</h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<section class="item content">
+	<div class="container">
+		<div class="underlined-title">
+			<div class="editContent">
+			</div>
+			<div class="wow-hr type_short">
+				<span class="wow-hr-h">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Health specialists</h3>
+							<p>
+								 Get across to us for health challenges .
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i> View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/health.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>Health and Fitness </h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.productbox -->
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Time to look Good</h3>
+							<p>
+								Hire us for your makeup.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/make up.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>Makeup Artists</h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- /.productbox -->
+			<div class="col-md-4">
+				<div class="productbox">
+					<div class="fadeshop">
+						<div class="captionshop text-center" style="display: none;">
+							<h3>Tile up</h3>
+							<p>
+								 We are the best in what we do.
+							</p>
+							<p>
+								<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+							</p>
+						</div>
+						<span class="maxproduct"><img src="images/tiles.jpg" alt=""></span>
+					</div>
+					<div class="product-details">
+						<a href="#">
+						<h1>Tilers</h1>
+						</a>
+						<span class="price">
+							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i>View Available Vendors</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+</div>
+<!-- CALL TO ACTION =============================-->
+<section class="content-block" style="background-color:rgb(211, 134, 0);">
+<div class="container text-center">
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1">
+<div class="item" data-scrollreveal="enter top over 0.4s after 0.1s">
+	<h1 class="callactiontitle"> Promote Items Area Give Discount to Buyers <span class="callactionbutton"><i class="fa fa-gift"></i> SHIELD VENDORS</span>
+	</h1>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER =============================-->
+<div class="footer text-center">
+	<div class="container">
+		<div class="row">
+			<p class="footernote">
+				 Connect With Us
+			</p>
+			<ul class="social-iconsfooter">
+				<li><a href="09132289831"><i class="fa fa-phone"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>	
+			</ul>
+			<p>
+				 &copy; 2023 SHIELD GLOBAL VENDORS<br/>
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- SCRIPTS =============================-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+						integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+						crossorigin="anonymous"></script>
+					<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+						integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+						crossorigin="anonymous"></script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+						integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+						crossorigin="anonymous"></script>
+					<script src="js/lga.min.js"></script>
+				
+<script src="js/jquery-.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/anim.js"></script>
+<script>
+//----HOVER CAPTION---//	  
+jQuery(document).ready(function ($) {
+	$('.fadeshop').hover(
+		function(){
+			$(this).find('.captionshop').fadeIn(150);
+		},
+		function(){
+			$(this).find('.captionshop').fadeOut(150);
+		}
+	);
+});
+</script>
+	
+</body>
+</html>

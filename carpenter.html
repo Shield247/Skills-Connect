@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="">
+<title>SHIELD VEDORS</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- HEADER =============================-->
+<header class="item header margin-top-0">
+<div class="wrapper">
+	<nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
+			<i class="fa fa-bars"></i>
+			<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a href="index.html" class="navbar-brand brand"> VENDORS </a>
+		</div>
+		<div id="navbar-collapse-02" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="propClone"><a href="index.html">Home</a></li>
+				<li class="propClone"><a href="about.html">About</a></li>
+				<li class="propClone"><a href="vendors.html">ALL VENDORS</a></li>
+				<li class="propClone"><a href="contact.html">Contact</a></li>
+				<li class="propClone"><a href="log.html">Login</a></li>
+				<li class="propClone"><a href="sig.html">Sign-up</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="text-pageheader">
+					<div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.0s">
+						 CARPENTERS AVAILABLE
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+
+<!-- CONTENT =============================-->
+<section class="item content">
+<div class="container toparea">
+	<div class="underlined-title">
+		<div class="editContent">
+			<h1 class="text-center latestitems">CARPENTERS AVAILABLE</h1>
+		</div>
+		<div class="wow-hr type_short">
+			<span class="wow-hr-h">
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8">
+			<div class="productbox">
+
+<div class="gallery">
+  <div class="slider">
+    <div class="slides">
+		<img src="images/arpe1.jpg" alt="">
+		<img src="images/arpe2.jpg" alt="">
+		<img src="images/arpe4.jpg" alt="">
+		<img src="images/arpe3.jpg" alt="">
+    </div>
+    <div class="controls">
+      <button class="prev" onclick="prevImage()">Prev</button>
+      <button class="next" onclick="nextImage()">Next</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.gallery {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 10px;
+}
+</style>
+
+<script>
+const slider = document.querySelector(".slider");
+const slides = document.querySelector(".slides");
+const images = document.querySelectorAll(".slides img");
+
+let currentSlide = 0;
+let slideWidth = 0;
+
+function init() {
+  slideWidth = slider.clientWidth;
+  slides.style.width = slideWidth * images.length + "px";
+  images.forEach((img) => {
+    img.style.width = slideWidth + "px";
+    img.style.height = slider.clientHeight + "px";
+  });
+}
+
+function nextImage() {
+  currentSlide += 1;
+  if (currentSlide >= images.length) {
+    currentSlide = 0;
+  }
+  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}
+
+function prevImage() {
+  currentSlide -= 1;
+  if (currentSlide < 0) {
+    currentSlide = images.length - 1;
+  }
+  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}
+
+init();
+</script>
+
+				<div class="clearfix">
+				</div>
+				<br/>
+				<div class="product-details text-left">
+					<p>
+						Your description here.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<a href="#" class="btn btn-buynow">BOOK VENDOR NOW</a>
+			<div class="properties-box">
+				<ul class="unstyle">
+					<li><b class="propertyname">Name:</b> Emmanuel</li>
+					<li><b class="propertyname">Location:</b> Calabar South</li>
+					<li><b class="propertyname">Gender:</b> Male</li>
+					<li><b class="propertyname">Vendor Type:</b> Carpenter</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+	
+<!-- FOOTER =============================-->
+<div class="footer text-center">
+	<div class="container">
+		<div class="row">
+			<p class="footernote">
+				 Connect With Us
+			</p>
+			<ul class="social-iconsfooter">
+				<li><a href="#"><i class="fa fa-phone"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			</ul>
+			<p>
+				 &copy; 2023 SHIELD GLOBAL VENDORS<br/>
+			</p>
+		</div>
+	</div>
+</div>
+<!-- SCRIPTS =============================-->
+<script src="js/jquery-.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/anim.js"></script>
+<script>
+//----HOVER CAPTION---//	  
+jQuery(document).ready(function ($) {
+	$('.fadeshop').hover(
+		function(){
+			$(this).find('.captionshop').fadeIn(150);
+		},
+		function(){
+			$(this).find('.captionshop').fadeOut(150);
+		}
+	);
+});
+</script>
+	
+</body>
+</html>
